@@ -1,0 +1,46 @@
+AllCops:
+  SuggestExtensions: false
+  NewCops: enable
+  Exclude:
+    - 'test/fixtures/**/*'
+    - 'bin/**/*'
+    - 'log/**/*'
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 120
+
+Layout/HashAlignment:
+  EnforcedColonStyle: table
+
+Metrics/BlockLength:
+  IgnoredMethods:
+    - context
+    - describe
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/ClassLength:
+  Max: 1500
+
+Metrics/ParameterLists:
+  Description: 'Pass no more than four parameters into a method.'
+  Max: 4
+  Enabled: true
+
+Style/CollectionMethods:
+  Enabled: true
+  PreferredMethods:
+    find: detect
+    inject: reduce
+    collect: map
+    find_all: select
